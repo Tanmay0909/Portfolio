@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanmay's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="924915.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    /* Preloader Styles */
+body { background: #white }
+.preload {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff; /* You can set the background color you want for the preloader */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999; /* Ensure the preloader appears on top of everything */
+        }
+.load {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+}
+
+.load hr {
+    border: 0;
+    margin: 0;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    border-radius: 50%;
+    animation: spin 2s ease infinite;
+}
+
+.load :first-child {
+    background: #19A68C;
+    animation-delay: -1.5s;
+}
+
+.load :nth-child(2) {
+    background: #F63D3A;
+    animation-delay: -1s;
+}
+
+.load :nth-child(3) {
+    background: #FDA543;
+    animation-delay: -0.5s;
+}
+
+.load :last-child {
+    background: #193B48;
+}
+
+@keyframes spin {
+    0%, 100% { transform: translate(0) }
+    25% { transform: translate(160%) }
+    50% { transform: translate(160%, 160%) }
+    75% { transform: translate(0, 160%) }
+}
+
+        body,html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px; /* Doubled the height */
+            background: linear-gradient(to right, #0073af 50%, #000 50%);
+            position: relative;
+        }
+        .black-bar-content, .links {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 0 20px;
+            font-size: 20px; /* Increased font size */
+            margin-top: 157px;
+            margin-right: 55px;
+        }
+
+        .git{
+          height: 33px;
+          vertical-align: middle;
+          margin-right: 2px; /* Increased distance between icons and text */
+          margin-top: -5px;
+          border-radius: 20%;
+        }
+
+        .lin {
+          height: 30px;
+          vertical-align: middle;
+          margin-right: 2px; /* Increased distance between icons and text */
+          margin-top: -5px;
+        }
+
+         .link{
+           height: 17px;
+           vertical-align: middle;
+           margin-right: 0px;
+           margin-top: -7px;
+         }
+
+         .linkedin, .github {
+           color: white;
+           text-decoration: none;
+           font-weight: bold;
+           position: absolute;
+           top: 33%;
+           transform: translateY(-50%);
+          }
+
+         .linkedin {
+           left: 25%;
+           transform: translateX(-50%);
+          }
+
+         .github {
+           right: 25%;
+           transform: translateX(50%);
+          }
+
+
+        .logo {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+
+        .ani{
+          height: 450px;
+        }
+
+        .resume-download {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style for the image within the resume download container */
+.resume-download .sym {
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Style for the Download Resume button */
+.download-resume {
+    background-color: #0073af;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-resume:hover {
+    background-color: #00588a;
+    transform: scale(1.05);
+}
+
+/* Add this to your styles.css */
+/* Add this to your styles.css */
+/* Navbar styles */
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin-right: 395px;
+    margin-top: 5px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+}
+
+.navbar li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+}
+
+/* Navbar link hover effect */
+.navbar a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+
+.navbar a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Scroll effect for navbar */
+.navbar.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust top margin for content to account for the fixed navbar */
+body {
+    margin-top: 70px;
+}
+
+
+        .hi-text {
+            font-family: 'Teko', sans-serif;
+            font-weight: bold;
+            font-size: 82px;
+            text-align: center;
+            margin-top: 2px; /* Light orange color */
+        }
+
+
+        /* Styling for additional text */
+        .additional-text {
+            font-family: 'Raleway', sans-serif;
+            font-size: 22px;
+            line-height: 1.6;
+            text-align: center;
+            color: #FFA500; /* Light orange color */
+            margin-top: 5px;
+            padding: 0 249px; /* Add some padding for readability */
+        }
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-link {
+              display: inline-block;
+              margin: 10px;
+              text-decoration: none;
+              border-radius: 50%; /* Make them circular */
+              overflow: hidden;
+              width: 60px;
+              height: 60px;
+              transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Add hover effect */
+              background-color: #0073af; /* Initial background color */
+        }
+
+        .social-link img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+        }
+
+        .social-link:hover {
+              transform: scale(1.1); /* Increase size on hover */
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+              background-color: #00588a; /* Change background color on hover */
+        }
+
+        .education-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Styling for the Education Heading */
+.education-heading {
+    font-family: 'Teko', sans-serif; /* Use the 'Teko' font */
+    font-size: 50px; /* Increase the font size */
+    color: black; /* Set the text color */
+    margin-bottom: 20px;
+    margin-top: 100px;
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 2px; /* Add letter spacing for readability */
+    display: inline-block; /* Make it an inline-block to fit content width */
+    transition: color 0.3s; /* Add color transition effect */
+}
+
+/* Add the red dot */
+.education-heading::after {
+    content: '\2022'; /* Unicode character for a bullet (red dot) */
+    color: red; /* Set the color of the dot */
+    margin-right: -30px;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.education-entry {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #ddd; /* Border style for each education entry */
+    border-radius: 10px;
+    background-color: #fff; /* Background color for each entry */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.education-logo {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo-circle {
+    width: 150px; /* Adjust the size of the circular space */
+    height: 150px; /* Adjust the size of the circular space */
+    border-radius: 50%; /* Create a circular shape */
+    overflow: hidden; /* Hide any content that overflows the circle */
+    margin: 0 auto; /* Center the circle horizontally */
+    background-color: #0073af; /* Background color for the circular space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-circle img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.education-logo img {
+    max-width: 150px; /* Increase the maximum width of the logo */
+    max-height: 150px; /* Increase the maximum height of the logo */
+}
+
+.education-details {
+    flex: 3;
+    padding: 10px;
+}
+
+.education-card {
+    background-color: #0073af; /* Background color for card */
+    color: #fff; /* Text color for card */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.education-card h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.degree-time {
+    background-color: #0073af; /* Background color for degree and time */
+    color: #fff; /* Text color for degree and time */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.education-description {
+    background-color: #fff; /* Background color for description */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Styling for the Skills Section */
+.skills-section {
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+/* Styling for the Skills Heading (same as Education heading) */
+.skills-section .education-heading {
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+/* Styling for the Skills Container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Styling for each skill box */
+.skill {
+    text-align: center;
+    flex-basis: calc(25% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Styling for the skill box */
+.skill-box {
+    text-align: center;
+}
+
+/* Styling for the circular skill container */
+.skill-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px; /* Add margin to separate skill boxes */
+}
+
+
+.skill-circle img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.skill p {
+    font-weight: bold;
+    color: black;
+    margin: 10px 0 0;
+}
+
+.skill-container {
+    text-align: center;
+}
+
+/* Style for skill name */
+.skill-name {
+    font-weight: bold;
+    color: white;
+    margin: 10px 0 0;
+    font-size: 18px; /* Adjust font size as needed */
+}
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* Style for skill overlays */
+.skill-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 50%;
+}
+
+.skill:hover .skill-overlay {
+    opacity: 1;
+}
+
+.sym{
+  height: 40px;
+}
+
+.project-thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust the height as needed */
+    overflow: hidden; /* Hide any overflow content */
+}
+
+.project-thumbnail img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+/* Zoom-In Effect */
+.project-thumbnail:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.project-details {
+    text-align: center;
+}
+
+.project-details h3 {
+    text-align: center;
+     margin-top: 10px;
+}
+
+/* Center "Learn More" link */
+.project-details .project-link {
+    display:inline-block;
+    text-align: center;
+    margin-top: -5px; /* Add spacing between title and link */
+}
+
+/* Center description */
+.project-details p {
+    text-align: center;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #0073af;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.project-link:hover {
+    background-color: #00588a;
+    transform: scale(1.05);
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed to control spacing */
+    margin-top: 20px; /* Add spacing between rows */
+    background-color: #f5f5f5; /* Add your desired background color */
+    padding: 20px;
+}
+
+.project-entry {
+    flex-basis: calc(33.33% - 20px); /* Adjust width and spacing between project sections */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Add spacing between columns */
+}
+
+/* Center-align the "Project" title */
+.project-heading-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Style for the smaller "Learn More" button */
+.small-button {
+    padding: 5px 10px; /* Adjust padding as needed */
+    font-size: 14px; /* Adjust font size for a smaller button */
+}
+
+.small-button:hover {
+    background-color: #00588a;
+    transform: scale(1.05);
+}
+
+.certifications-heading-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed to control spacing */
+    margin-top: 20px; /* Add spacing between rows */
+    background-color: #f5f5f5; /* Add your desired background color */
+    padding: 20px;
+}
+
+.certification-entry {
+    flex-basis: calc(33.33% - 20px); /* Adjust width and spacing between certification sections */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Add spacing between columns */
+}
+
+.certification-thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust the height as needed */
+    overflow: hidden; /* Hide any overflow content */
+}
+
+.certification-thumbnail img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+/* Zoom-In Effect for Certification Thumbnails */
+.certification-thumbnail:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.certification-details {
+    text-align: center;
+}
+
+.certification-details h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.certification-details p {
+    text-align: center;
+}
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.animate.animated {
+      opacity: 1;
+      transform: translateY(0);
+}
+/* Thinner scrollbar */
+::-webkit-scrollbar {
+    width: 6px; /* Adjust the width as needed */
+}
+
+/* Thinner scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: #FFA500; /* Set the color of the scrollbar thumb (the draggable part) */
+    border-radius: 0px; /* Round the corners of the thumb */
+}
+
+/* For Firefox */
+scrollbar-width: thin;
+scrollbar-color: #0073af transparent;
+
+/* Adjust the color of the scrollbar track (the background) if needed */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+@keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply the animation to elements with the 'animate' class */
+        .animate {
+            animation: fadeIn 1s ease-in-out;
+        }
+        /* Style for the Contact Me Section */
+        .contact-me-section {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        /* Contact Heading styles */
+        .contact-heading {
+            font-family: 'Teko', sans-serif;
+            font-size: 36px;
+            color: #0073af;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color 0.3s;
+        }
+
+        /* Contact details and form styles */
+        .contact-me-details {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 20px;
+            border: 2px solid #0073af;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Form group styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Form input and textarea styles */
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 96%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Submit button styles */
+        form button[type="submit"] {
+            background-color: #0073af;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        /* Button hover effect */
+        form button[type="submit"]:hover {
+            background-color: #00588a;
+            transform: scale(1.05);
+        }
+
+        /* Link styles */
+        .contact-me-details a {
+            color: #0073af;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-me-details a:hover {
+            color: #00588a;
+        }
+        .footer {
+    background-color: #1a1a1a; /* Background color for the footer */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 30px 0; /* Add some padding to the top and bottom of the footer */
+    position: relative; /* Relative positioning for the pseudo-elements */
+}
+
+/* Style the text within the footer */
+.footer p {
+    margin: 0; /* Remove default margin for the paragraph */
+    font-size: 18px; /* Adjust the font size */
+    letter-spacing: 1px; /* Add letter spacing for better readability */
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-weight: 700; /* Bold text */
+    opacity: 0.8; /* Reduce opacity for a subtle effect */
+    transition: opacity 0.3s, transform 0.3s ease-in-out; /* Smooth opacity and transform effect */
+}
+
+/* Add a more prominent hover effect to the text */
+.footer p:hover {
+    opacity: 1; /* Increase opacity on hover */
+    transform: translateY(-5px); /* Move text up slightly on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+/* Container to center align content within the footer */
+.container {
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+    </style>
+</head>
+<body>
+  <div class="preload">
+        <div class="load">
+            <hr/><hr/><hr/><hr/>
+        </div>
+    </div>
+    <div class="header animate">
+      <div class="links">
+          <a href="https://www.linkedin.com/in/tanmay-soni-56491b251/" class="linkedin">
+            <img class="lin" src="linkedin.png" alt="">
+              Connect with me on LinkedIn!
+            <img class="link" src="ex-link2.png" alt="">
+          </a>
+      </div>
+        <div class="black-bar-content">
+            <a href="https://github.com/Tanmay0909" class="github">
+               <img class="git" src="github.png" alt="">
+                 Follow me on GitHub!
+               <img class="link" src="ex-link2.png" alt="">
+            </a>
+            <img class="sym" src="924915.png" alt="">
+            <a href="Resume.pdf" class="download-resume">Download Resume</a>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+      <span style="font-family: 'Teko', sans-serif; font-weight: bold; font-size: 55px; margin-left: -1200px;" class="animate" >TS</span>
+      <span style="color: red; font-size: 24px;"class="animate">&bull;</span>
+      <div class="navbar" id="navbar">
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+      <div class="hi-text animate">Hi, I am Tanmay</div>
+      <div class="additional-text animate">
+        I'm a third-year student with a burning passion for becoming a software engineer. My journey in the world of technology has led me to explore fascinating realms such as web3 and blockchain application development. I thrive on the belief that striving to be the best not only benefits me but also lifts the entire team. I am a supportive and cooperative team player, always eager to lend a hand and share knowledge. Throughout my academic and extracurricular pursuits, I have had the privilege of holding leadership positions, honing my organizational and problem-solving skills. My ultimate goal is to leverage my skills and knowledge to make a positive impact on the world.
+      </div>
+    </div>
+    <!-- Add these links below the additional text -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="mailto:tanmaysoni798@gmail.com" class="social-link gmail animate" target="_blank">
+            <img src="envelope.png" alt="Gmail">
+        </a>
+        <a href="https://twitter.com/tanmaysoni09" class="social-link twitter animate" target="_blank">
+            <img src="twitter.png" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com/tanmay.0909/" class="social-link instagram animate" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.youtube.com/@NotBookCricket" class="social-link youtube animate" target="_blank">
+            <img src="youtube.png" alt="YouTube">
+        </a>
+    </div>
+
+    <div class="education-section animate ">
+    <h2 class="education-heading ">Education</h2>
+    <div class="education-entry">
+        <div class="education-logo">
+            <div class="logo-circle">
+                <img src="birla.jpeg" alt="University Logo">
+            </div>
+        </div>
+        <div class="education-details">
+            <div class="education-card">
+                <h3>University Name</h3>
+                <p>
+                    <span class="degree-time">Degree in [Your Degree]</span>
+                    <span class="degree-time">Year of Graduation: [Year]</span>
+                </p>
+                <p>Location: [Location]</p>
+                <p>Duration: [Start Year] - [End Year]</p>
+            </div>
+            <div class="education-description">
+                <p>Summary:</p>
+                <p>[Description of what you learned or achieved at this university]</p>
+            </div>
+        </div>
+    </div>
+    <!-- Add more education entries as needed -->
+</div>
+<div class="education-section animate">
+<div class="education-entry">
+    <div class="education-logo">
+        <div class="logo-circle">
+            <img src="sunbeam2.png" alt="University Logo">
+        </div>
+    </div>
+    <div class="education-details">
+        <div class="education-card">
+            <h3>University Name</h3>
+            <p>
+                <span class="degree-time">Degree in [Your Degree]</span>
+                <span class="degree-time">Year of Graduation: [Year]</span>
+            </p>
+            <p>Location: [Location]</p>
+            <p>Duration: [Start Year] - [End Year]</p>
+        </div>
+        <div class="education-description">
+            <p>Summary:</p>
+            <p>[Description of what you learned or achieved at this university]</p>
+        </div>
+    </div>
+</div>
+<!-- Add more education entries as needed -->
+</div>
+<div class="education-section animate">
+<div class="education-entry">
+    <div class="education-logo">
+        <div class="logo-circle">
+            <img src="Srmseal.png" alt="University Logo">
+        </div>
+    </div>
+    <div class="education-details">
+        <div class="education-card">
+            <h3>University Name</h3>
+            <p>
+                <span class="degree-time">Degree in [Your Degree]</span>
+                <span class="degree-time">Year of Graduation: [Year]</span>
+            </p>
+            <p>Location: [Location]</p>
+            <p>Duration: [Start Year] - [End Year]</p>
+        </div>
+        <div class="education-description">
+            <p>Summary:</p>
+            <p>[Description of what you learned or achieved at this university]</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Modify the skills section in your HTML as follows -->
+<div class="skills-section animate">
+    <h2 class="education-heading">Skills</h2>
+    <div class="skills-container">
+        <!-- Skill Box for HTML -->
+        <div class="skill">
+            <div class="skill-box">
+                <div class="skill-circle">
+                    <img src="html.png" alt="HTML">
+                </div>
+                <p class="skill-name">HTML</p>
+            </div>
+        </div>
+        <!-- Skill Box for CSS -->
+        <div class="skill">
+            <div class="skill-box">
+                <div class="skill-circle">
+                    <img src="css.png" alt="CSS">
+                </div>
+                <p class="skill-name">CSS</p>
+            </div>
+        </div>
+        <!-- Skill Box for JavaScript -->
+        <div class="skill">
+            <div class="skill-box">
+                <div class="skill-circle">
+                    <img src="js.png" alt="JavaScript">
+                </div>
+                <p class="skill-name">JavaScript</p>
+            </div>
+        </div>
+        <!-- Skill Box for Bootstrap -->
+        <div class="skill">
+            <div class="skill-box">
+                <div class="skill-circle">
+                    <img src="bootstrap.png" alt="Bootstrap">
+                </div>
+                <p class="skill-name">Bootstrap</p>
+            </div>
+        </div>
+        <!-- Add more skills as needed -->
+    </div>
+    <div class="skills-container">
+        <!-- Skill Box for C -->
+        <div class="skill">
+            <div class="skill-box">
+                <div class="skill-circle">
+                    <img src="c.png" alt="C">
+                </div>
+                <p class="skill-name">C</p>
+            </div>
+        </div>
+        <!-- Skill Box for C++ -->
+        <div class="skill">
+            <div class="skill-box">
+                <div class="skill-circle">
+                    <img src="c++.png" alt="C++">
+                </div>
+                <p class="skill-name">C++</p>
+            </div>
+        </div>
+        <!-- Skill Box for Python -->
+        <div class="skill">
+            <div class="skill-box">
+                <div class="skill-circle">
+                    <img src="Python.png" alt="Python">
+                </div>
+                <p class="skill-name">Python</p>
+            </div>
+        </div>
+        <!-- Skill Box for MySQL -->
+        <div class="skill">
+            <div class="skill-box">
+                <div class="skill-circle">
+                    <img src="mysql.png" alt="MySQL">
+                </div>
+                <p class="skill-name">MySQL</p>
+            </div>
+        </div>
+        <!-- Add more skills as needed -->
+    </div>
+    <div class="skills-container">
+        <!-- Skill Box for Node JS -->
+        <div class="skill">
+            <div class="skill-box">
+                <div class="skill-circle">
+                    <img src="nodejs.png" alt="Node JS">
+                </div>
+                <p class="skill-name">Node JS</p>
+            </div>
+        </div>
+        <!-- Skill Box for GIT -->
+        <div class="skill">
+            <div class="skill-box">
+                <div class="skill-circle">
+                    <img src="git.png" alt="GIT">
+                </div>
+                <p class="skill-name">GIT</p>
+            </div>
+        </div>
+        <!-- Skill Box for Solidity -->
+        <div class="skill">
+            <div class="skill-box">
+                <div class="skill-circle">
+                    <img src="solidity.png" alt="Solidity">
+                </div>
+                <p class="skill-name">Solidity</p>
+            </div>
+        </div>
+        <!-- Skill Box for Ethereum -->
+        <div class="skill">
+            <div class="skill-box">
+                <div class="skill-circle">
+                    <img src="Ethereum.png" alt="Ethereum">
+                </div>
+                <p class="skill-name">Ethereum</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="project-heading-container animate">
+        <h2 class="education-heading project-details ">Projects</h2>
+    </div>
+
+    <div class="project-container">
+      <!-- Project 1 Section -->
+<div class="project-entry animate">
+  <div class="project-thumbnail project-1-thumbnail">
+      <img src="bg.jpg" alt="Project 1">
+      <!-- Add any overlay or effect div here if needed -->
+  </div>
+  <div class="project-details animate">
+      <h3>Project Title 1</h3>
+      <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.cvsjvcjsjcsjcbsjbcjsbchjsbchscbjsbcksbcksb</p>
+      <a href="project1-details.html" class="project-link small-button">Learn More</a>
+  </div>
+</div>
+
+<!-- Project 2 Section -->
+<div class="project-entry animate">
+  <div class="project-thumbnail project-2-thumbnail">
+      <img src="bg.jpg" alt="Project 2">
+      <!-- Add any overlay or effect div here if needed -->
+  </div>
+  <div class="project-details animate">
+      <h3>Project Title 2</h3>
+      <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="project2-details.html" class="project-link">Learn More</a>
+  </div>
+</div>
+
+<!-- Project 3 Section -->
+<div class="project-entry animate">
+  <div class="project-thumbnail project-3-thumbnail">
+      <img src="bg.jpg" alt="Project 3">
+      <!-- Add any overlay or effect div here if needed -->
+  </div>
+  <div class="project-details animate">
+      <h3>Project Title 3</h3>
+      <p>Description of Project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a href="project3-details.html" class="project-link">Learn More</a>
+  </div>
+</div>
+</div>
+<div class="certifications-heading-container animate">
+    <h2 class="education-heading project-details">Certifications</h2>
+</div>
+
+<div class="certifications-container animate">
+    <!-- Certification 1 Section -->
+    <div class="certification-entry animate">
+        <div class="certification-thumbnail certification-1-thumbnail">
+            <img src="certificate1.jpg" alt="Certificate 1">
+        </div>
+        <div class="certification-details animate">
+            <h3>Certificate Title 1</h3>
+            <p>Description of Certificate 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+    <!-- Certification 2 Section -->
+    <div class="certification-entry animate">
+        <div class="certification-thumbnail certification-2-thumbnail animate">
+            <img src="certificate2.jpg" alt="Certificate 2">
+        </div>
+        <div class="certification-details animate">
+            <h3>Certificate Title 2</h3>
+            <p>Description of Certificate 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+    <!-- Certification 3 Section -->
+    <div class="certification-entry animate">
+        <div class="certification-thumbnail certification-3-thumbnail animate">
+            <img src="certificate3.jpg" alt="Certificate 3">
+        </div>
+        <div class="certification-details animate">
+            <h3>Certificate Title 3</h3>
+            <p>Description of Certificate 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <!-- Add more certification entries as needed -->
+</div>
+<div class="contact-me-section animate">
+    <h2 class="education-heading">Contact&nbsp;Me</h2>
+    <div class="contact-me-details">
+            <!-- Add your contact information and form here -->
+            <p>Email: <a href="mailto:tanmaysoni798@gmail.com">tanmaysoni798@gmail.com</a></p>
+            <p>Phone: 0123456789</p>
+
+            <!-- You can create a simple contact form here if you want -->
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="send-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p>&copy; Tanmay Soni. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+<script>
+    // JavaScript function to hide the preloader after animations
+    function hidePreloader() {
+        const preloader = document.querySelector('.preload');
+        preloader.style.display = 'none';
+    }
+
+    // Trigger the animations when the page is fully loaded
+    window.addEventListener('load', () => {
+        const elementsToAnimate = document.querySelectorAll('.animate');
+        elementsToAnimate.forEach((element) => {
+            element.addEventListener('animationend', hidePreloader);
+            element.classList.add('animated');
+        });
+    });
+    // JavaScript to add scroll effect to the navbar
+    window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
+
+</script>
+</html>
